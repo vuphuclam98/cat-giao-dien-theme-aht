@@ -1,0 +1,175 @@
+@footer-top__bg: #f2f2f2;
+/* start footer */
+#footer{
+    .footer-top{
+        background-color: @footer-top__bg;
+        padding-top: 55px;
+    }
+    .item{
+        padding-left: 98px;
+        &.contact{
+            padding-left: 0;
+            .menu-list{
+                margin-top: 18px;
+            }
+        }
+        .title{
+            .font-family(@font-poppins-semibold,18px);
+            letter-spacing: .1px;
+            margin-bottom: 0;
+        }
+    }
+    .menu-list{
+        margin-top: 13px;
+    }
+    .menu-list__item{
+        position: relative;
+        &:hover{
+            .content{
+                color: @color-primary-hover;
+                text-decoration: none;
+            }
+        }
+        .icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 16px;
+            color: #20acca;
+            letter-spacing: .6px;
+        }
+        .content{
+            .font-family(@font-poppins-meidum,13px,@desc-primary__color);
+            margin-bottom: 13px;
+            display: inline-block;
+            &.content-contact{
+                padding-left: 37px;   
+                line-height: 20px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+    .social-list{
+        margin-top: 28px;
+        padding-bottom: 60px;
+    }
+    .social-list>.social-list__item{
+        display: inline-block;
+        color: @desc-primary__color;
+        margin-right: 17px;
+        &:hover{
+            color: @color-primary-hover;
+        }
+    }
+    .footer-bottom{
+        padding: 25px 0;
+        .design-by{
+            float: left;
+        }
+        .design-by>.content{
+            .font-family(@font-poppins-meidum,12px,@desc-primary__color);
+            letter-spacing: .1px;
+        }
+
+        .pay{
+            float: right;
+        }
+
+    }
+}/* end footer */
+
+@media only screen and(max-width: 991px){
+    #footer{
+        .item{
+            padding-left: 30px;
+        }
+        .item.contact{
+            .menu-list{
+                margin-top: 8px;
+            }
+        }
+
+        .menu-list{
+            margin-top: 5px;
+        }
+        .menu-list__item{
+            margin-bottom: 0;
+            overflow: auto;
+            .content{
+                margin-bottom: 0;
+            }
+            .icon{
+                font-size: 15px;
+            }
+            .content.content-contact{
+                padding-left: 30px;
+                line-height: 20px;
+                margin-bottom: 6px;
+            }
+        }
+        .social-list{
+            margin-top: 15px;
+            padding-bottom: 30px;
+        }
+        .footer-bottom{
+            padding: 15px 0 10px 0;
+            img{
+                width: 100%;
+            }
+            .img{
+                max-width: 300px;
+            }
+            &::before{
+                content: "";
+                display: table;
+            }
+            &::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 767px){
+    #footer{
+        .footer-bottom{
+            .design-by{
+                float: none;
+                display: block;
+                text-align: center;
+                margin: 15px auto;
+                font-size: 13px;
+            }
+            .pay{
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+            .img{
+                max-width: 250px;
+                margin: 0 auto;
+            }
+        }
+        .item{
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media only screen and(max-width: 575px){
+    #footer{
+       .item{
+           padding-left: 0;
+           margin-bottom: 30px;
+       }
+       .social-list{
+           padding-bottom: 0;
+       }
+    }
+}
+@media only screen and(max-width: 360px){
+    
+}
+@import "./fonts.less";
+@import "./styles.less";
