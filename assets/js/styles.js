@@ -28,5 +28,11 @@ $(document).ready(function () {
         $(this).toggleClass('show');
         $(this).siblings().toggleClass('hiden');
     });
+    $(".btn__search").click(function(){
+        $(".input-left").addClass('show');
+        setTimeout(function(){
+            $(".form-search").addClass('show');
+        },500);
+    });
 });
 

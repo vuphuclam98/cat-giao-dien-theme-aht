@@ -9,19 +9,18 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome.css">
-    <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!-- link less css -->
     <link rel="stylesheet/less" type="text/css" href="./assets/css/styles.less">
-    <script src="./assets/js/less.js" type="text/javascript"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="./assets/js/"></script>
+    <script src="./assets/js/less.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     
 </head>
 <body>
     <div id="main">
         <div class="roat"></div>
         <!-- start header -->
-        <header id="header"> 
+        <header class="header"> 
             <div class="header-top">
                 <div class="container">
                     <div class="top-content">
@@ -66,11 +65,9 @@
                             <div class="item-language">
                                 <div class="dropdown item-language">
                                     <button class="btn btn-secondary dropdown-toggle btn1" type="button" id="language" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <div class="item-language">
-                                            <img src="./assets/images/icon/logo-usa.png" alt="" class="logo-country">
-                                            <span class="country-name">English</span>
-                                            <!-- <span class="angle"><i class="fas fa-angle-down"></i></span> -->
-                                        </div>
+                                        <img src="./assets/images/icon/logo-usa.png" alt="" class="logo-country">
+                                        <span class="country-name">English</span>
+                                        <!-- <span class="angle"><i class="fas fa-angle-down"></i></span> -->
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="language">
                                         <li>
@@ -109,35 +106,39 @@
                             <div class="item-list">
                                 <div class="item search">
                                     <div class="form-search">
-                                        <form action="">
-                                            <div class="input-item input-select">
-                                                <div class="dropdown select__category">
-                                                    <button class="btn btn-secondary dropdown-toggle category" type="button" id="category" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span class="title">All Category</span> 
-                                                        <span class="icon"><i class="fas fa-caret-down"></i></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="category">
-                                                        <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Action</a></li>
-                                                        <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Another action</a></li>
-                                                        <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Something else here</a></li>
-                                                    </ul>
+                                        <form action="#">
+                                            <div class="input-left">
+                                                <div class="input-item input-select">
+                                                    <div class="dropdown select__category">
+                                                        <button class="btn btn-secondary dropdown-toggle category" type="button" id="category" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="title">All Category</span> 
+                                                            <span class="icon"><i class="fas fa-caret-down"></i></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="category">
+                                                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Action</a></li>
+                                                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Another action</a></li>
+                                                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="input-item data">
-                                                <input type="text" class="input__search" placeholder="Search for Product..">
+                                                <div class="input-item data">
+                                                    <input type="text" class="input__search" placeholder="Search for Product..">
+                                                </div>
                                             </div>
                                             <button class="btn btn__search"><i class="fas fa-search"></i></button>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="item setting">
-                                    <div class="img">
-                                        <img src="./assets/images/icon/setting.png" alt="">
+                                <div class="item sytem">
+                                    <div class="item setting">
+                                        <div class="img">
+                                            <img src="./assets/images/icon/setting.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item cart">
-                                    <div class="img">
-                                        <img src="./assets/images/icon/cart.png" alt="">
+                                    <div class="item cart">
+                                        <div class="img">
+                                            <img src="./assets/images/icon/cart.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +189,7 @@
                             <div class="content-banner">
                                 <div class="container">
                                     <div class="item">
-                                        <p class="title">Find Any <font class="special">Medicine</font> You Need!</p>
+                                        <p class="title">Find Any <span class="special">Medicine</span> You Need!</p>
                                         <p class="desc">Free Standard Shipping Everyday</p>
                                         <a href="#" class="link">Shop Now</a>
                                     </div>
@@ -201,7 +202,7 @@
                             <div class="content-banner">
                                 <div class="container">
                                     <div class="item">
-                                        <p class="title">Find Any <font class="special">Medicine</font> You Need!</p>
+                                        <p class="title">Find Any <span class="special">Medicine</span> You Need!</p>
                                         <p class="desc">Free Standard Shipping Everyday</p>
                                         <a href="#" class="link">Shop Now</a>
                                     </div>
@@ -210,11 +211,9 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev btn-control-banner" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                        <span class="visually-hidden"><i class="fas fa-chevron-left"></i>
+                        <span class="visually-hidden"><i class="fas fa-chevron-left"></i></span>
                     </a>
                     <a class="carousel-control-next btn-control-banner" href="#carouselExampleControls" role="button" data-bs-slide="next">
-                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                         <span class="visually-hidden"><i class="fas fa-chevron-right"></i></span>
                     </a>
                 </div>
@@ -300,7 +299,7 @@
                                             </div>
                                         </div>
                                         <h2 class="title">BEAUTY & COSMETICS</h2>
-                                        <p class="desc">Sale up to <font class="special">40%</font> off</p>
+                                        <p class="desc">Sale up to <span class="special">40%</span> off</p>
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +316,7 @@
                                     <div class="info-item item3">
                                         <div class="content">
                                             <p class="title">accessories</p>
-                                            <p class="desc">Sale up to <font class="special">20%</font> off</p>
+                                            <p class="desc">Sale up to <span class="special">20%</span> off</p>
                                         </div>
                                     </div>
                                 </div>
@@ -340,8 +339,8 @@
                                 </div>
                             </div>
                             <div class="slider-button">
-                                <button type="button" class="btn__prev" href="#products" role="button" data-bs-slide="prev"><i class="fas fa-chevron-left"></i></button>
-                                <button type="button" class="btn__next" href="#products" role="button" data-bs-slide="next"><i class="fas fa-chevron-right"></i></button>
+                                <a class="btn__prev" href="#products" data-bs-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                                <a class="btn__next" href="#products" data-bs-slide="next"><i class="fas fa-chevron-right"></i></a>
                             </div>
                         </div>
                     <div class="module-content">
@@ -359,7 +358,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Nature's Bounty Biotin  10000 MCG</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -391,7 +389,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Natural Factors Vitamin C  Blueberry Rasp</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -407,7 +404,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Jarrow Formulas  Methylcobalamin</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -423,7 +419,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Nature's Bounty Biotin  10000 MCG</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -439,7 +434,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Best Colon Detox Formula  Advanced Colon</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -455,7 +449,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Natural Factors Vitamin C  Blueberry Rasp</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -471,7 +464,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Jarrow Formulas  Methylcobalamin</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -492,7 +484,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Nature's Bounty Biotin  10000 MCG</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -524,7 +515,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Natural Factors Vitamin C  Blueberry Rasp</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -540,7 +530,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Jarrow Formulas  Methylcobalamin</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -556,7 +545,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Nature's Bounty Biotin  10000 MCG</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -572,7 +560,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Best Colon Detox Formula  Advanced Colon</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -588,7 +575,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Natural Factors Vitamin C  Blueberry Rasp</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -604,7 +590,6 @@
                                                 <div class="content">
                                                     <a href="#" class="title">Jarrow Formulas  Methylcobalamin</a>
                                                     <div class="price">
-                                                        <h5 class="price__old"></h5>
                                                         <h5 class="price__new">$30.00</h5>
                                                     </div>
                                                 </div>
@@ -632,33 +617,33 @@
                     </div>
                     <div class="module-content">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="item">
                                     <div class="img">
                                         <img src="./assets/images/news/news-item1.jpg" alt="">
                                     </div>
                                     <a href="#" class="title">Probiotics may help battle antibiotic resistance Probiotics may help</a>
-                                    <p class="created-by">14 June 2018 by <font class="special">Admin</font></p>
+                                    <p class="created-by">14 June 2018 by <a href="#" class="special">Admin</a></p>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="item">
                                     <div class="img">
                                         <img src="./assets/images/news/news-item2.jpg" alt="">
                                     </div>
                                     <a href="#" class="title">Study overturns what we know about kidney stones</a>
-                                    <p class="created-by">14 June 2018 by <font class="special">Admin</font></p>
+                                    <p class="created-by">14 June 2018 by <a href="#" class="special">Admin</a></p>
                                 </div>
                             </div>                        
 
-                            <div class="col-md-4 col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="item">
                                     <div class="img">
                                         <img src="./assets/images/news/news-item3.jpg" alt="">
                                     </div>
                                     <a href="#" class="title">Hair loss: Scientists test wearable re-growth device</a>
-                                    <p class="created-by">14 June 2018 by <font class="special">Admin</font></p>
+                                    <p class="created-by">14 June 2018 by <a href="#" class="special">Admin</a></p>
                                 </div>
                             </div>                        
                         </div>
@@ -675,7 +660,7 @@
                     <p class="desc">Sign up for our newsletter to receive updates and exclusive offers</p>
                 </div>
                 <div class="content">
-                    <form action="">
+                    <form action="/">
                         <div class="form-sign-up">
                             <input type="text" class="import__input" placeholder="Enter your email address here">
                             <button type="button" class="btn btn-sign-up">SIGN UP</button>
@@ -723,7 +708,7 @@
         </div><!-- end partner -->
 
         <!-- start footer -->
-        <footer id="footer">
+        <footer class="footer">
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
@@ -767,7 +752,6 @@
                                     <div class="menu-list__item">
                                         <a href="#" class="content">Carrer</a>
                                     </div>
-
                                     <div class="menu-list__item">
                                         <a href="#" class="content">Contact</a>
                                     </div>
@@ -838,18 +822,12 @@
                         </div>
                     </div>
                     <div class="design-by">
-                        <p class="content">@2018 Design by <font class="special">Creative Wp</font>. All Rights Reserved.</p>
+                        <p class="content">@2018 Design by <a href="#" class="special">Creative Wp</a>. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-    <!-- <script src="./assets/js/styles.js"></script> -->
-    <script src=".//assets/js/styles.js"></script>
-    <!-- <script>
-            $(".show__menu").click(function(){
-            alert("Đã ẩn phần tử HTML");
-            });
-    </script> -->
+    <script src="./assets/js/styles.js"></script>
 </body>
 </html>
