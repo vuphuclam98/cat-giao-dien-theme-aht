@@ -104,8 +104,8 @@ body {
 .section-banner {
     .carousel-inner {
         .carousel-item {
-            height: 750px;
             width: 100%;
+            background-size: 100%;
             background-repeat: no-repeat;
         }
     }
@@ -466,6 +466,13 @@ body {
     .container {
         max-width: 1170px;
     }
+    .section-banner {
+        .carousel-inner {
+            .carousel-item {
+                height: 750px;
+            }
+        }
+    }
     .section-infomation {
         .col:nth-child(4) {
             img {
@@ -497,11 +504,6 @@ body {
 @media only screen and(max-width: 1199px) {
     /*star section-banner */
     .section-banner {
-        .carousel-inner {
-            .carousel-item {
-                height: 600px;
-            }
-        }
         .content-banner {
             .item {
                 max-width: 600px;
@@ -544,12 +546,6 @@ body {
         }
     }
     .section-banner {
-        .carousel-inner {
-            .carousel-item {
-                height: 450px;
-                background-position: center top;
-            }
-        }
         .content-banner {
             .item {
                 max-width: 500px;
@@ -563,6 +559,32 @@ body {
                 font-size: 13px;
                 margin: 0px 0 30px 0;
             }
+        }
+    }
+    .btn-control-banner {
+        width: 40px;
+        span {
+            font-size: 20px;
+        }
+    }
+    .carousel-control-prev.btn-control-banner {
+        border-top: 40px solid @border-banner__bg;
+        border-right: 8px solid transparent;
+        &:hover{
+            border-top: 40px solid @btn-banner__hover;
+        }
+        span {
+            margin-top: -35px;
+        }
+    }
+    .carousel-control-next.btn-control-banner{
+        border-bottom: 40px solid @border-banner__bg;
+        border-left: 8px solid transparent;
+        &:hover{
+            border-bottom: 40px solid @btn-banner__hover;
+        }
+        span {
+            margin-top: 7px;
         }
     }
     .section-infomation {
@@ -627,32 +649,6 @@ body {
     }
 }
 @media only screen and(max-width: 767px) {
-    .btn-control-banner {
-        width: 40px;
-        span {
-            font-size: 20px;
-        }
-    }
-    .carousel-control-prev.btn-control-banner {
-        border-top: 40px solid @border-banner__bg;
-        border-right: 8px solid transparent;
-        &:hover{
-            border-top: 40px solid @btn-banner__hover;
-        }
-        span {
-            margin-top: -35px;
-        }
-    }
-    .carousel-control-next.btn-control-banner{
-        border-bottom: 40px solid @border-banner__bg;
-        border-left: 8px solid transparent;
-        &:hover{
-            border-bottom: 40px solid @btn-banner__hover;
-        }
-        span {
-            margin-top: 7px;
-        }
-    }
     .heading-title {
         .title {
             font-size: 25px;
@@ -662,11 +658,6 @@ body {
         }
     }
     .section-banner {
-        .carousel-inner {
-            .carousel-item {
-                background-position: center top;
-            }
-        }
         .content-banner {
             .item {
                 display: block;
@@ -732,11 +723,6 @@ body {
         }
     }
     .section-banner {
-        .carousel-inner {
-            .carousel-item {
-                height: 400px;
-            }
-        }
     }
     .btn-control-banner {
         display: none;
@@ -751,11 +737,6 @@ body {
 }
 @media only screen and(max-width: 360px) {
     .section-banner {
-        .carousel-inner {
-            .carousel-item {
-                height: 350px;
-            }
-        }
         .content-banner {
             .title {
                 font-size: 27px;
