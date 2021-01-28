@@ -21,7 +21,8 @@
     height:             0;
     background:         none;
     position:           absolute;
-    top: 50%;
+    top:                50%;
+    opacity: 1;
     .translate(0, -50%);
     span {
         position:           absolute;
@@ -41,12 +42,12 @@
     }
     &:hover {
         span{
-            color:          @btn-banner__hover;
+            color:          @color-white;
         }
     }
 }
 .carousel-control-prev.btn-control-banner {
-    border-top:         60px solid @btn-banner__hover;
+    border-top:         60px solid @border-banner__bg;
     border-right:       11px solid transparent;
     span {
         margin-top:     -48px;
@@ -56,7 +57,7 @@
     }
 }
 .carousel-control-next.btn-control-banner {
-    border-bottom:       60px solid @btn-banner__hover;
+    border-bottom:       60px solid @border-banner__bg;
     border-left:         11px solid transparent;
     span {
         margin-top:      12px;
