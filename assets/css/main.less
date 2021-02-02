@@ -123,9 +123,6 @@ body {
         position: relative;
         display: inline-block;
         width: 100%;
-        // .dummy{
-        //     margin-top: 35%;
-        // }
         .carousel-item {
             width: 100%;
             background-repeat: no-repeat;
@@ -135,6 +132,7 @@ body {
             left: 0;
             right: 0;
             background-size: cover;
+            background-position: top right
         }
     }
     .carousel-control-prev {
@@ -696,7 +694,7 @@ body {
     }
     .section-banner {
         position: relative;
-        z-index: -1;
+        z-index: 0;
         .content-banner {
             .item {
                 display: block;
@@ -782,7 +780,9 @@ body {
             }
         }
     }
-
+    .dummy {
+        margin-top: 50%;
+    }
     .btn-control-banner {
         display: none;
     }

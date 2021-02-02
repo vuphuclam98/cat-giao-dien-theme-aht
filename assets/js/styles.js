@@ -34,6 +34,9 @@ $(document).ready(function () {
             $(".form-search").addClass('show');
         },500);
     });
+    $('.section-banner').click(function(){
+        $(".form-search, .input-left").removeClass('show');
+    });
     
     let cw = parseInt($('.container').css('maxWidth')) ;
     let cc= $('.dummy').css({'margin-top': cw*0.654 +'px'});
