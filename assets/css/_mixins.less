@@ -22,25 +22,29 @@
 @item-time__bg:         #fff;
 @slider-button__color:  #cfcfcf;
 @border-banner__bg:     #fff;
-.box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #000){
-    box-shadow: @x @y @blur @color;
-    -moz-box-shadow: @x @y @blur @color;
-    -webkit-box-shadow: @x @y @blur @color;
+
+.box-shadow(@_x: 0, @_y: 0, @_blur: 1px, @_color: #000){
+    box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
 }
-.translate(@x,@y){
-    -moz-transform: translate(@x,@y);
-    -webkit-transform: translate(@x,@y);
-    -o-transform: translate(@x,@y);
-    -ms-transform: translate(@x,@y);
-    transform: translate(@x,@y);
+
+.translate(@_x,@_y){
+    -moz-transform: translate(@_x,@_y);
+    -webkit-transform: translate(@_x,@_y);
+    -o-transform: translate(@_x,@_y);
+    -ms-transform: translate(@_x,@_y);
+    transform: translate(@_x,@_y);
 }
-.font-family(@font,@size,@color:@color-primary){
-    font-family: @font;
-    font-size: @size;
-    color: @color;
+
+.font-family(@_font,@_size,@_color:@color-primary){
+    font-family: @_font;
+    font-size: @_size;
+    color: @_color;
 }
-.size-price(@size: 13px){
-    font-size: @size;
+
+.size-price(@_size: 13px){
+    font-size: @_size;
 }
 /* ------------footer---------- */
 @footer-top__bg: #f2f2f2;
