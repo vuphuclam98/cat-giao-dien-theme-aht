@@ -46,15 +46,18 @@
         .translate(-50%,0);
         color: @color-primary;
     }
+
     &::before {
         content: '';
         display: table;
     }
+
     &::after {
         content: '';
         display: table;
         clear: both;
     }
+
     &:hover {
         span{
             color: @color-white;
@@ -133,12 +136,15 @@ body {
             background-position: top right
         }
     }
+
     .carousel-control-prev {
         left: 1%;
     }
+
     .carousel-control-next {
         right: 1%;
     }
+
     .content-banner {
         .item {
             max-width: 670px;
@@ -158,6 +164,7 @@ body {
             margin: 15px 0 48px 0;
         }
     }
+
     .link {
         .font-family(@font-poppins-semibold, 16px);
         position: relative;
@@ -176,12 +183,15 @@ body {
 /* start section-infomation */
 .section-infomation {
     padding-top: 62px;
+
     .module-header {
         margin-bottom: 43px;
     }
+
     .item {
         position: relative;
     }
+
     .item> img {
         position: absolute;
         left: 0;
@@ -189,6 +199,7 @@ body {
         width: 41px;
         height: 41px;
     }
+
     .item> .content {
         padding-left: 61px;
         margin-top: -5px;
@@ -205,6 +216,7 @@ body {
             letter-spacing: -.1px;
         }
     }
+
     .module-content {
         .info-item {
             background-size: cover;
@@ -212,6 +224,7 @@ body {
             background-position: center right;
         }
     }
+
     .info-item {
         position: relative;
         overflow: auto;
@@ -236,6 +249,7 @@ body {
             height: 240px;
         }
     }
+
     .info-item> .content {
         position: absolute;
         top: 50%;
@@ -263,6 +277,7 @@ body {
             letter-spacing: -1px;
         }
     }
+
     .infomation-time {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -271,6 +286,7 @@ body {
         margin: 0 auto;
         margin-bottom: 25px;    
     }
+
     .infomation-time__item {
         display: inline-block;
         background-color: @item-time__bg;
@@ -291,19 +307,23 @@ body {
 /* start section-products */
 .section-products {
     margin-top: 25px;
+
     .module-header {
         position: relative;
         margin-bottom: 5px;
+
         &::before {
             content: '';
             display: table;
         }
+        
         &::after {
             content: '';
             display: table;
             clear: both;
         }
     }
+
     .slider-button {
         position: absolute;
         right: 0;
@@ -323,11 +343,13 @@ body {
             color: @color-primary-hover;
         }
     }
+
     .carousel-inner {
         &.overflow-hiden {
             overflow: unset;
         }
     }
+
     .product-item {
         margin-bottom: 53px;
         position: relative;
@@ -348,6 +370,7 @@ body {
             }
         }
     }
+
     .product-item> .img{
         padding:0;
         background-color: @bg-title__color;
@@ -357,6 +380,7 @@ body {
             margin: 0 auto;
         }
     }
+
     .product-item> .content{
         max-width: 200px;
         margin: 0 auto;
@@ -395,14 +419,17 @@ body {
     background-position: center;
     padding-top: 64px;
     padding-bottom: 67px;
+
     .module-header {
         .heading-title {
             text-align: center;
         }
     }
+
     .module-content {
         margin-top: 25px;
     }
+
     .item {
         margin-bottom: 30px;
         img {
@@ -431,6 +458,7 @@ body {
 /* start section-sign-up */
 .section-sign-up {
     background-color: @sign-up__bg;
+
     .head {
         text-align: center;
         padding-top: 89px;
@@ -444,10 +472,12 @@ body {
             .font-family(@font-poppins-meidum, 14px, @color-white);
         }
     }
+
     .content {
         text-align: center;
         padding-bottom: 100px;
     }
+
     .form-sign-up {
         position: relative;
         max-width: 770px;
@@ -464,6 +494,7 @@ body {
             border: none;
             outline: none;
         }
+
         .btn-sign-up {
             position: absolute;
             right: 10px;
